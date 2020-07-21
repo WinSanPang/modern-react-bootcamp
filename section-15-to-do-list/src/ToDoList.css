@@ -1,0 +1,90 @@
+.ToDoList {
+  margin: 4rem 0rem;
+  padding: 5rem 3rem;
+  background: steelblue;
+  color: #fff;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.ToDoList ul {
+  margin-top: 2.6rem;
+  list-style: none;
+}
+
+.ToDoList h1 {
+  margin: 0;
+}
+
+.Divider {
+  margin: 0 10%;
+  margin-bottom: 10%;
+  padding: 0;
+  border-top: 1px solid;
+}
+
+.ToDoList h1 span {
+  display: block;
+  font-size: 0.8rem;
+  margin-bottom: 0.7rem;
+  margin-left: 3px;
+  margin-top: 0.2rem;
+}
+
+.todo-enter {
+  opacity: 0;
+}
+.todo-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.todo-exit {
+  opacity: 1;
+}
+.todo-exit-active {
+  /* opacity: 0; */
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 500ms ease-in-out;
+}
+
+.Todo .Todo-buttons i {
+  display: inline-block;
+}
+.form-enter {
+  transform: translateY(77px);
+  transition: all 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+  position: absolute;
+}
+.form-enter-active {
+  transform: translateY(0%);
+  transition: all 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+  position: absolute;
+}
+.form-exit {
+  transform: translateY(0%);
+  position: absolute;
+}
+.form-exit-active {
+  transform: translateY(77px);
+  transition: all 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+  position: absolute;
+}
+
+.task-text-enter {
+  transform: translateY(-77px);
+  position: absolute;
+}
+.task-text-enter-active {
+  transform: translateY(0);
+  transition: all 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+  position: absolute;
+}
+.task-text-exit {
+  transform: translateY(0);
+  position: absolute;
+}
+.task-text-exit-active {
+  transform: translateY(-77px);
+  position: absolute;
+  transition: all 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}

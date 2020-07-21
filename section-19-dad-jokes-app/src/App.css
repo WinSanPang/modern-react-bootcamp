@@ -1,0 +1,13 @@
+.App {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(
+    135deg,
+    lightskyblue 0%,
+    steelblue 50%,
+    green 50%,
+    lightgreen 100%
+  );
+}

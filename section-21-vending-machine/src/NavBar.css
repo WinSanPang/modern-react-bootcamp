@@ -1,0 +1,17 @@
+.NavBar {
+  background: steelblue;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.NavBar a {
+  text-decoration: none;
+  transition: all 0.5 ease;
+  color: white;
+}
+
+.NavBar a.NavBar__Active {
+  border-bottom: 3px solid darkslateblue;
+}

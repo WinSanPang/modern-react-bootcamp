@@ -1,0 +1,99 @@
+.ToDo {
+  display: flex;
+  margin: 1rem 2rem 2px;
+  padding: 1.1rem 3rem;
+  height: 77px;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  position: relative;
+  transition: opacity 500ms ease-in-out;
+  border-radius: 15px;
+}
+.ToDo-task {
+  position: relative;
+  transition: opacity 0.4s linear;
+}
+.ToDo-completed {
+  transition: opacity 300ms ease-in-out;
+  transition-delay: 200ms;
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.ToDo-completed .ToDo-task {
+  opacity: 0.6;
+}
+.ToDo-completed .ToDo-task:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -0.5rem;
+  display: block;
+  width: 0%;
+  height: 4px;
+  background: #fff;
+  animation: strikeitem 0.3s ease-in 0s forwards;
+}
+
+@keyframes strikeitem {
+  to {
+    width: calc(100% + 10rem);
+  }
+}
+
+.ToDo-buttons {
+  flex-shrink: 0;
+  padding-left: 0.7em;
+  margin-left: auto;
+}
+
+.ToDo-buttons button {
+  border: none;
+  font-size: 1em;
+  margin: 0.4em;
+  background: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.ToDo-edit-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ToDo-edit-form label {
+  min-width: 100%;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+.ToDo-edit-form input {
+  flex-grow: 1;
+  border: none;
+  background-color: lightblue;
+  border-radius: 15px;
+  padding: 0 1.5em;
+  font-size: initial;
+}
+.ToDo-edit-form button {
+  border-radius: 15px;
+  padding: 0 1.3rem;
+  border: none;
+  background: teal;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-left: 15px;
+  cursor: pointer;
+  transition: background 0.2s ease-out;
+}
+.ToDo-edit-form button:hover {
+  background: lightskyblue;
+}
+.ToDo-edit-form input,
+.ToDo-edit-form button {
+  font-family: "Quicksand", sans-serif;
+  height: 3rem;
+}

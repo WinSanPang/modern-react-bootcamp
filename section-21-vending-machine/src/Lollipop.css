@@ -1,0 +1,22 @@
+.Lollipop {
+  width: 100vw;
+  height: 100vh;
+  background-size: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://i.gifer.com/QOVX.gif');
+}
+
+.Lollipop .message {
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+.Lollipop .message h1 {
+  text-align: center;
+  color: white;
+}
